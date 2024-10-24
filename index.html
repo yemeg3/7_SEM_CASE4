@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход и регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать!</h1>
+        <div id="auth-choice">
+            <button id="showLoginForm">Войти</button>
+            <button id="showRegisterForm">Зарегистрироваться</button>
+        </div>
+
+        <div id="login-form" style="display:none;">
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+
+        <div id="register-form" style="display:none;">
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <label for="newUsername">Имя пользователя:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+
+                <label for="newPassword">Пароль:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+        <div id="logout-section" style="display:none;">
+            <button id="logoutButton">Выйти</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

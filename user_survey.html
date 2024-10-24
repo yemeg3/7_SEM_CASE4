@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос пользователя</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Заполните опрос</h1>
+        <button id="logoutButton">Выйти</button>
+        <form id="surveyForm">
+            <!-- Текстовый вопрос -->
+            <label for="question1">Как вас зовут?</label>
+            <input type="text" id="question1" name="question1" required>
+            <label>Ваши любимые виды спорта:</label>
+            <input type="checkbox" id="sport1" name="sports" value="Футбол">
+            <label for="sport1">Футбол</label>
+            <input type="checkbox" id="sport2" name="sports" value="Баскетбол">
+            <label for="sport2">Баскетбол</label>
+            <input type="checkbox" id="sport3" name="sports" value="Теннис">
+            <label for="sport3">Теннис</label>
+            <label>Сколько часов в неделю вы занимаетесь спортом?</label>
+            <input type="radio" id="hours1" name="sportHours" value="Менее 1 часа">
+            <label for="hours1">Менее 1 часа</label>
+            <input type="radio" id="hours2" name="sportHours" value="1-3 часа">
+            <label for="hours2">1-3 часа</label>
+            <input type="radio" id="hours3" name="sportHours" value="Более 3 часов">
+            <label for="hours3">Более 3 часов</label>
+            <label for="birthday">Когда ваш день рождения?</label>
+            <input type="date" id="birthday" name="birthday" required>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <div id="responseMessage" style="display: none;"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
